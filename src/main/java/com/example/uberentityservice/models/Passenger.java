@@ -18,7 +18,9 @@ import java.util.List;
 public class Passenger extends BaseModel {
     private String name;
 
-
+    private String phoneNumber;
+    private String email;
+    private String password;
     @OneToMany(mappedBy = "passenger")
     private List<Booking> bookings = new ArrayList<>();
 }
