@@ -45,7 +45,11 @@ public class Driver extends BaseModel{
 
     @DecimalMin(value = "0.0", inclusive = false,message = "Rating should be between 0.0 and 5.0")
     @DecimalMax(value = "5.0", inclusive = true,message = "Rating should be between 0.0 and 5.0")
-    private double rating;
+    private Double rating;
+
+
+    private Boolean isAvailable;
+
 
     // 1 : n , Driver : Booking
     @OneToMany(mappedBy = "driver")
