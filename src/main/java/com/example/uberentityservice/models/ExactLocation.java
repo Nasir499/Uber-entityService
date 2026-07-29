@@ -12,7 +12,7 @@ import lombok.*;
 @Entity
 public class ExactLocation extends BaseModel{
 
-    private Double lattitude;
+    private Double latitude;
 
     private Double longitude;
 }
